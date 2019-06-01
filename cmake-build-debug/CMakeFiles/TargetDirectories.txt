@@ -1,2 +1,0 @@
-/home/sziraqui/Projects/napi-samples/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sziraqui/Projects/napi-samples/cmake-build-debug/CMakeFiles/edit_cache.dir

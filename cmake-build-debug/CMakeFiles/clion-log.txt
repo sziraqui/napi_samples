@@ -1,4 +1,0 @@
-/home/sziraqui/MyApps/clion-2019.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sziraqui/Projects/napi-samples
--- Configuring done
--- Generating done
--- Build files have been written to: /home/sziraqui/Projects/napi-samples/cmake-build-debug

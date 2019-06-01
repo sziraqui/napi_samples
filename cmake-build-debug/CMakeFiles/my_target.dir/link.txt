@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -g   CMakeFiles/my_target.dir/class_binding/src/main.cpp.o CMakeFiles/my_target.dir/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp.o CMakeFiles/my_target.dir/function_binding/src/funcs.cpp.o CMakeFiles/my_target.dir/function_binding/src/main.cpp.o  -o my_target 
