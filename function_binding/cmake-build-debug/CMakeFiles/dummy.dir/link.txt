@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -g   CMakeFiles/dummy.dir/src/main.cpp.o CMakeFiles/dummy.dir/src/funcs.cpp.o  -o dummy 

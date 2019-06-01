@@ -1,0 +1,6 @@
+**/node_modules/**
+.vscode
+.idea/*.iml
+.idea/.name
+**/build/**
+**/package-lock.json

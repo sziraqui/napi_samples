@@ -1,0 +1,16 @@
+{
+  "name": "class_binding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "gypfile": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-gyp rebuild"
+  },
+  "author": "sziraqui",
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^1.6.3"
+  }
+}

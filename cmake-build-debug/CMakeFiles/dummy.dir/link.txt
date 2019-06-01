@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -g   CMakeFiles/dummy.dir/function_binding/src/main.cpp.o  -o dummy 

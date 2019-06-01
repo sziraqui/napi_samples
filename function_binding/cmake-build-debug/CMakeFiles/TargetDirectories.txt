@@ -1,0 +1,3 @@
+/home/sziraqui/Projects/napi-samples/function_binding/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sziraqui/Projects/napi-samples/function_binding/cmake-build-debug/CMakeFiles/dummy.dir
+/home/sziraqui/Projects/napi-samples/function_binding/cmake-build-debug/CMakeFiles/edit_cache.dir
