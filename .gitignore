@@ -4,3 +4,4 @@
 .idea/.name
 **/build/**
 **/package-lock.json
+**/cmake-build-debug/**
