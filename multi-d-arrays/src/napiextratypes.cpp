@@ -26,7 +26,7 @@ Napi::String NapiExtra::NdArray::GetStringAt(int *dims, int dimCount) {
  * GetValueAt({0,1,1}, 3) will return element from a 3d Array
  */
 Napi::Value NapiExtra::NdArray::GetValueAt(int *dims, int dimCount) {
-    Napi::Value holder = this->Get( (uint)dims[0] ); // returns Value
+    Napi::Value holder = this->As<Napi::Value>(); // returns Value
     for(int i = 0; i < dimCount && holder.IsArray(); ++i) {
         Napi::Array tmp = holder.As<Napi::Array>(); // convert Value to Array
         if(dims[i] < tmp.Length()){
@@ -46,7 +46,7 @@ void NapiExtra::NdArray::SetValueAt(int *dims, int dimCount, Napi::Value val) {
     for(uint i = 0; i < dimCount && holder.IsArray(); ++i) {
         Napi::Array tmp = holder.As<Napi::Array>(); // convert Value to Array
         if(dims[i] < tmp.Length()){
-            tmp.Set(i, val);
+            tmp.Set( (uint)dims[i], val);
         } else break;
     }
 }

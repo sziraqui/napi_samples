@@ -1,13 +1,12 @@
 const addon = require('./build/Release/addon.node');
 
-const str = (["abcd", "efg", "hijk"]);
-// addon.printArray(str);
+const a = [1,2,3,4,5];
+addon.printArray(a);
 // 2d array
 const mat = [
-    [2,3,4,5],
-    [1,2,4,5],
-    [2,3,5,1],
-    [4,6,3,9]
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
 ];
 addon.print2dArray(mat);
 addon.zerofy(mat);

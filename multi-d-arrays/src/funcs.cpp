@@ -14,9 +14,10 @@ void printArray(const Napi::CallbackInfo& info) {
         NapiExtra::NdArray arr(info[0].As<Napi::Array>());
         for(uint i = 0; i < arr.Length(); ++i) {
             int a[1]; a[0] = i;
-            Napi::String str = arr.GetStringAt(a, 1);
-            std::cout<<"arr["<< i <<"] " << str.Utf8Value() << std::endl;
+            Napi::Number str = arr.GetNumberAt(a, 1);
+            std::cout << str.Int32Value() << ",";
         }
+        std::cout<<std::endl;
     }
 }
 // works
