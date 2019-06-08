@@ -1,7 +1,6 @@
 **/node_modules/**
 .vscode
-.idea/*.iml
-.idea/.name
+.idea
 **/build/**
 **/package-lock.json
 **/cmake-build-debug/**
