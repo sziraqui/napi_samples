@@ -1,7 +1,7 @@
 const addon = require('./build/Release/addon.node');
 
 const str = (["abcd", "efg", "hijk"]);
-addon.printArray(str);
+// addon.printArray(str);
 // 2d array
 const mat = [
     [2,3,4,5],
@@ -9,4 +9,4 @@ const mat = [
     [2,3,5,1],
     [4,6,3,9]
 ];
-addon.print2dArray(arr);
+addon.print2dArray(mat);

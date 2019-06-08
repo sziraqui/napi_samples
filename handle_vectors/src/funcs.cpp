@@ -44,23 +44,23 @@ void printArray(const Napi::CallbackInfo& info) {
         }
     }
 }
-//// not working, compiler error
-//void print2dArray(const Napi::CallbackInfo& info) {
-//    if(info[0].IsArray()) {
-//        std::cout <<"2d array"<< std::endl;
-//        const Napi::Array arr = info[0].As<Napi::Array>();
-//        for(uint i = 0; i < arr.Length(); ++i) {
-//            for(uint j = 0; j < arr[0].As<Napi::Array>().Length(); ++j) {
-//                Napi::Number num = arr[i].As<Napi::Array>().[j].As<Napi::Number>();
-//                std::cout<< num.Int32Value()<<",";
-//            }
-//            std::cout<<std::endl;
-//        }
-//    }
-//}
+// works
+void print2dArray(const Napi::CallbackInfo& info) {
+    if(info[0].IsArray()) {
+        std::cout <<"2d array"<< std::endl;
+        const Napi::Array arr = info[0].As<Napi::Array>();
+        for(uint i = 0; i < arr.Length(); ++i) {
+            for(uint j = 0; j < arr[(uint)0].As<Napi::Array>().Length(); ++j) {
+                Napi::Number num = (arr[i].As<Napi::Array>().Get(j)).As<Napi::Number>();
+                std::cout<< num.Int32Value()<<",";
+            }
+            std::cout<<std::endl;
+        }
+    }
+}
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
     exports.Set("printArray", Napi::Function::New(env, printArray));
-    // exports.Set("print2dArray", Napi::Function::New(env, print2dArray));
+    exports.Set("print2dArray", Napi::Function::New(env, print2dArray));
     return exports;
 }
