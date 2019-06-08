@@ -1,0 +1,24 @@
+{
+  "name": "multi-d-arrays",
+  "version": "1.0.0",
+  "description": "Node Addon API example for dealing with multi dimensional arrays",
+  "main": "index.js",
+  "gypfile": true,
+  "scripts": {
+    "build": "node-gyp rebuild"
+  },
+  "keywords": [
+    "napi",
+    "node-addon-api",
+    "bindings.gyp",
+    "node-gyp"
+  ],
+  "author": "sziraqui",
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^1.6.3"
+  },
+  "devDependencies": {
+    "node-gyp": "^4.0.0"
+  }
+}
